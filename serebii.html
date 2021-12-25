@@ -1,0 +1,1362 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Serebii.net - Where Legends Come To Life</title>
+	
+<link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossorigin>
+<link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossorigin>
+<link rel="preconnect" href="https://kumo.network-n.com/" crossorigin>
+<meta http-equiv="imagetoolbar" CONTENT="no">
+	<link rel="stylesheet" type="text/css" href="/style/layout.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1" id="viewport-meta">
+
+<!-- GDPR Compliancy -->
+<style>
+body {
+	--cmpBgColor: #507C36;
+	--cmpTextColor: #000000;
+	--cmpLinkColor: #ffffff;
+	--cmpPurposesColor: #000000;
+	--cmpBrandColor: #000000;
+	--cmpLogo: url('https://www.serebii.net/extralogo.png');
+}
+</style>
+<!-- GDPR Compliancy -->
+
+<link rel="search" href="/serebii-opensearch.xml" type="application/opensearchdescription+xml" title="Serebii Open Search" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128947957-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-128947957-1');
+</script>
+<!-- Place the below code anywhere you like in the <head> (higher is better) -->
+
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+
+<script async  src="https://kumo.network-n.com/dist/app.js" site="serebii"></script>
+
+
+<meta name="keywords" content="Serebii, Pokémon, Pokémon News, Pokemon News, Pocket Monsters, Pokédex, Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, Pokémon Ultra Moon, Pokémon GO, Pokémon Let's Go Pikachu, Pokémon Let's Go Eevee, Pokémon Animé, Animé, TCG, Pokémon TCG" />
+<meta name="description" content="Contains up-to-date news, databases and information about all Pokémon Games, TCG sets and the TV show." />
+
+<link rel="canonical" href="https://www.serebii.net/index2.shtml" />
+
+<link rel="stylesheet" href="/style/spp-news.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/style/tablenew.css" type="text/css" media="screen" />
+
+
+
+
+</head>
+<body>
+<script type="text/javascript">
+	var viewport_meta = document.getElementById('viewport-meta');
+	var viewport_timer;
+
+	// these body*Class are reused in the lbar mobile menu
+	function bodyAddClass(className){
+		if(document.body) document.body.classList.add(className);
+	}
+	function bodyRemoveClass(className){
+		if(document.body) document.body.className = document.body.className.replace(className,"");
+	}
+
+	function viewport_set() {
+		// Define our viewport meta values
+		var viewports = {
+			default: viewport_meta.getAttribute('content'),
+			mobileL: 'width=device-width,initial-scale=0.75',
+			mobileM: 'width=device-width,initial-scale=0.5',
+			mobileS: 'width=device-width,initial-scale=0.4'
+		};
+
+		// Change the viewport value based on screen.width
+		if(screen.width < 370){
+			viewport_meta.setAttribute('content', viewports.mobileS);
+			bodyAddClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		} else if(screen.width < 505){
+			viewport_meta.setAttribute('content', viewports.mobileM);
+			bodyRemoveClass("nav_mobileS");
+			bodyAddClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		} else if (screen.width < 760){
+			viewport_meta.setAttribute('content', viewports.mobileL);
+			bodyRemoveClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyAddClass("nav_mobileL");
+		} else{
+			viewport_meta.setAttribute('content', viewports.default);
+			bodyRemoveClass("nav_mobileS");
+			bodyRemoveClass("nav_mobileM");
+			bodyRemoveClass("nav_mobileL");
+		}
+	}
+
+	// Set the correct viewport value on page load
+	viewport_set();
+
+	/* attach listener to (delay) set the correct viewport after device orientation change or resize. also onload so the nav_mobile* class gets added to body AFTER <body> has loaded */
+	if(window.addEventListener){
+		window.addEventListener('load', viewport_set);
+		window.addEventListener('resize', function(){
+			clearTimeout(viewport_timer);
+			viewport_timer = setTimeout(viewport_set, 100);
+		})
+	} else{
+		window.attachEvent('onload', viewport_set)
+		window.attachEvent('onresize', function(){
+			clearTimeout(viewport_timer);
+			viewport_timer = setTimeout(viewport_set, 100);
+		})
+	}
+
+</script>
+
+
+<header id="header">
+	<div class="banner">
+		<a href="/"><img src="/Banner.jpg" alt="Serebii.net Header" style="height:139px"></a>
+	</div>
+
+	<nav class="quicklinks">
+		<ul>
+			<li><b>Quick Links</b></li>
+			<li><a href="/index2.shtml">Home</a></li>
+			<li><a href="https://forums.serebii.net/" target="blank">Forums</a></li>
+			<li><a href="mailto:webmaster@serebii.net">Contact</a></li>
+			<li><a href="/discord.shtml">Discord</a></li>
+			<li><a href="/pokemon">Pokédex Hub</a></li>
+			<li><a href="/pokemongo/pokemon">GO Pokédex</a></li>
+			<li><a href="/pokedex-swsh">Sword & Shield Pokédex</a></li>
+			<li><a href="/pokearth">Pokéarth</a></li>
+
+			<li class="search">
+				<form id="searchbox_018410473690156091934:6gahkiyodbi" action="/search.shtml" style="margin:0px;">
+					<input type="hidden" name="cx" value="018410473690156091934:6gahkiyodbi" />
+					<input type="hidden" name="cof" value="FORID:11" />
+					<input name="q" type="text" size="20" />
+					<input type="submit" name="sa" value="Search" />
+				</form>
+				<script type="text/javascript" src="//www.google.com/coop/cse/brand?form=searchbox_018410473690156091934%3A6gahkiyodbi"></script>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<div id="wrapper">
+
+<ul id="tbar_sticky">
+	<li>
+		<a href="#lbar" class="navheader" id="tbar_lbar_open"><img src="/hidden/2019-04/burger.svg"></a>
+	</li>
+	<li>
+		<form id="searchbox_018410473690156091934:6gahkiyodbi" action="/search.shtml" style="margin:0px;">
+			<input type="hidden" name="cx" value="018410473690156091934:6gahkiyodbi" />
+			<input type="hidden" name="cof" value="FORID:11" />
+			<input name="q" type="search" placeholder="Search Serebii.net..." />
+		</form>
+	</li>
+	<li>
+		<a href="#rbar" class="navheader" id="tbar_rbar_open" style="padding-right:20px"><img src="/hidden/2019-04/burger.svg"></a>
+	</li>
+</ul>
+<div id="tbar_backdrop"></div>
+
+<nav id="lbar">
+	<ul id="lbar_ul">
+		<li>
+			<a href="/" class="navheader">Databases</a>
+			<ul>
+				<li><a href="/index2.shtml">News</a>
+				<li><a href="/archive.shtml">Archived news</a></li>
+				<li><a href="/pokemon/"><b>Pokédex</b></a></li>
+				<li><a href="/pokedex/">-Red/Blue Pokédex</a></li>
+				<li><a href="/pokedex-gs/">-Gold/Silver Pokédex</a></li>
+				<li><a href="/pokedex-rs/">-Ruby/Sapphire Pokédex</a></li>
+				<li><a href="/pokedex-dp/">-Diamond/Pearl Pokédex</a></li>
+				<li><a href="/pokedex-bw/">-Black/White Pokédex</a></li>
+				<li><a href="/pokedex-xy/">-X & Y Pokédex</a></li>
+				<li><a href="/pokedex-sm/">-Sun & Moon Pokédex</a></li>
+				<li><a href="/pokedex-sm/">-Let's Go Pokédex</a></li>
+				<li><a href="/pokedex-swsh/">-Sword & Shield Pokédex</a></li>
+				<li><a href="/pokedex-swsh/">-BDSP Pokédex</a></li>
+				<li><a href="/pokemongo/pokemon/">-GO Pokédex</a></li>
+
+				<li><strong>Attackdex</strong></li>
+				<li><a href="/attackdex-rby/">-Gen 1 Attackdex</a></li>
+				<li><a href="/attackdex-gs/">-Gen 2 Attackdex</a></li>
+				<li><a href="/attackdex/">-Gen 3 Attackdex</a></li>
+				<li><a href="/attackdex-dp/">-Gen 4 Attackdex</a></li>
+				<li><a href="/attackdex-bw/">-Gen 5 Attackdex</a></li>
+				<li><a href="/attackdex-xy/">-Gen 6 Attackdex</a></li>
+				<li><a href="/attackdex-sm/">-Gen 7 Attackdex</a></li>
+				<li><a href="/attackdex-swsh/">-Gen 8 Attackdex</a></li>
+				<li><a href="/itemdex/">ItemDex</a></li>
+				<li><a href="/pokearth/">Pokéarth</a></li>
+				<li><a href="/abilitydex/">Abilitydex</a></li>
+				<li><a href="/spindex/">Spin-Off Pokédex</a></li>
+				<li><a href="/spindex-dp/">Spin-Off Pokédex DP</a></li>
+				<li><a href="/spindex-bw/">Spin-Off Pokédex BW</a></li>
+				<li><a href="/card/dex/">Cardex</a></li>
+				<li><a href="/movies/dex/">Cinematic Pokédex</a></li>
+				<li><a href="/games/mechanics.shtml">Game Mechanics</a></li>
+				<li><a href="/games/iv-calcswsh.shtml">-Sword/Shield IV Calc.</a></li>
+				<li><a href="/potw-swsh">Pokémon of the Week</a></li>
+				<li><a href="/potw-swsh/">-8th Gen</a></li>
+				<li><a href="/potw-sm/">-7th Gen</a></li>
+				<li><a href="/pokemon/timeline.shtml">Pokémon Timeline</a></li>
+				<li><a href="/pokemoncenter/">Pokémon Centers</a></li>
+				<li><a href="/playpokemon">Play! Pokémon</a></li>
+				<li><a href="/music/p25music">P25 Music</a></li>
+				<li><a href="/presentations">Pokémon Presentations</a></li>
+				<li><a href="/pokemonshirts/">Pokémon Shirts</a></li>
+				<li><a href="http://www.serebiiforums.com" target="blank">Forums</a></li>
+				<li><a href="http://advent.serebii.net" target="blank">Advent Calendar</a></li>
+				<li><a href="/discord.shtml">Discord Chat</a></li>
+				<li><a href="/games/currentevents.shtml">Current & Upcoming Events</a></li>
+				<li><a href="/events">Event Database</a></li>
+				<li><a href="/legendsarceus/pokemon.shtml">8th Generation Pokémon</a></li>
+				<li><a href="/legendsarceus/hisuianforms.shtml">-Hisuian Forms</a></li>
+			</ul>
+		</li>
+
+
+		<li>
+			<a href="/anime/" class="navheader">Anime</a>
+			<ul>
+				<li><a href="/anime/epiguide/">Episode Listings & Pictures</a>
+				<li><a href="/anime/dex/">AniméDex</a></li>
+				<li><a href="/anime/characters/">Character Bios</a></li>
+				<li><a href="/anime/epiguide/indigo/">The Indigo League</a></li>
+				<li><a href="/anime/epiguide/orange/">The Orange League</a></li>
+				<li><a href="/anime/epiguide/johto/">The Johto Saga</a></li>
+				<li><a href="/anime/epiguide/houen/">The Saga in Hoenn!</a></li>
+				<li><a href="/anime/epiguide/kanto/">Kanto Battle Frontier Saga!</a></li>
+				<li><a href="/anime/epiguide/shinou/">The Sinnoh Saga!</a></li>
+				<li><a href="/anime/epiguide/bestwishes/">Best Wishes - Unova Saga</a></li>
+				<li><a href="/anime/epiguide/xy/">XY - Kalos Saga</a></li>
+				<li><a href="/anime/epiguide/sunmoon/">Sun & Moon - Alola Saga</a></li>
+				<li><a href="/anime/epiguide/pokemon/">Pokémon Journeys - Galar Saga</a></li>
+				<li><a href="/anime/epiguide/chronicles/">Pokémon Chronicles</a></li>
+				<li><a href="/anime/epiguide/generations/">Pokémon Generations</a></li>
+				<li><a href="/anime/epiguide/twilightwings/">Pokémon Twilight Wings</a></li>
+				<li><a href="/anime/epiguide/evolutions/">Pokémon Evolutions</a></li>
+				<li><a href="/anime/poketoon/">PokéToon</a></li>
+				<li><a href="/anime/epiguide/specials/">The Special Episodes</a></li>
+				<li><a href="/anime/banned.shtml">The Banned Episodes</a></li>
+				<li><a href="/anime/shiny/">Shiny Pokémon</a></li>
+
+			</ul>
+		</li>
+
+		<li>
+			<a href="/games/" class="navheader">Video Games</a>
+			<ul>
+				<li><a href="/pokemon/generation8.shtml"><b>Gen VIII</b></a></li>
+				<li><a href="/swordshield/">Sword & Shield</a></li>
+				<li><a href="/brilliantdiamondshiningpearl/">Brilliant Diamond & Shining Pearl</a></li>
+				<li><a href="/legendsarceus/">Pokémon Legends: Arceus</a></li>
+				<li><a href="/pokemonhome/">Pokémon HOME</a></li>
+				<li><a href="/pokemongo/">Pokémon GO</a></li>
+				<li><a href="/pokemonmasters/">Pokémon Masters EX</a></li>
+				<li><a href="/dungeonrescueteamdx/">Pokémon Mystery Dungeon Rescue Team DX</a></li>
+				<li><a href="/pokemonsmile/">Pokémon Smile</a></li>
+				<li><a href="/cafemix/">Pokémon Café ReMix</a></li>
+				<li><a href="/newpokemonsnap/">New Pokémon Snap</a></li>
+				<li><a href="/pokemonunite/">Pokémon UNITE</a></li>
+				<li><a href="/pokemonsleep/">Pokémon Sleep</a></li>
+				<li><a href="/detectivepikachu2/">Detective Pikachu 2</a></li>
+				<li><a href="/tcglive/">Pokémon TCG Live</a></li>
+
+				<li><a href="/pokemon/generation7.shtml"><b>Gen VII</b></a></li>
+				<li><a href="/sunmoon/">Sun & Moon</a></li>
+				<li><a href="/ultrasunultramoon/">Ultra Sun & Ultra Moon</a></li>
+				<li><a href="/letsgopikachueevee/">Let's Go, Pikachu! & Let's Go, Eevee!</a></li>
+				<li><a href="/pokemongo/">Pokémon GO</a></li>
+				<li><a href="/magikarpjump/">Pokémon: Magikarp Jump</a></li>
+				<li><a href="/rumblerush/">Pokémon Rumble Rush</a></li>
+				<li><a href="/pokkendx/">Pokkén Tournament DX</a></li>
+				<li><a href="/detective/">Detective Pikachu</a></li>
+				<li><a href="/quest/">Pokémon Quest</a></li>
+				<li><a href="/smashbrosultimate/">Super Smash Bros. Ultimate</a></li>
+				<li><a href="/pokemon/generation6.shtml"><b>Gen VI</b></a></li>
+				<li><a href="/xy/">X & Y</a></li>
+				<li><a href="/omegarubyalphasapphire/">Omega Ruby & Alpha Sapphire</a></li>
+				<li><a href="/bank/">Pokémon Bank</a></li>
+				<li><a href="/battletrozei/">Pokémon Battle TrozeiPokémon Link: Battle</a></li>
+				<li><a href="/artacademy/">Pokémon Art Academy</a></li>
+				<li><a href="/bandofthieves/">The Band of Thieves & 1000 Pokémon</a></li>
+				<li><a href="/shuffle/">Pokémon Shuffle</a></li>
+				<li><a href="/rumbleworld/">Pokémon Rumble World</a></li>
+				<li><a href="/supermysterydungeon/">Pokémon Super Mystery Dungeon</a></li>
+				<li><a href="/picross/">Pokémon Picross</a></li>
+				<li><a href="/detective/">Detective Pikachu</a></li>
+				<li><a href="/pokken/">Pokkén Tournament</a></li>
+				<li><a href="/duel/">Pokémon Duel</a></li>
+				<li><a href="/smashbros3dswiiu/">Smash Bros for 3DS/Wii U</a></li>
+				<li><a href="/games/badge/">Nintendo Badge Arcade</a></li>
+				<li><a href="/pokemon/generation5.shtml"><b>Gen V</b></a></li>
+				<li><a href="/blackwhite/">Black & White</a></li>
+				<li><a href="/black2white2/">Black 2 & White 2</a></li>
+				<li><a href="/dreamradar/">Pokémon Dream Radar</a></li>
+				<li><a href="/trettalab/">Pokémon Tretta Lab</a></li>
+				<li><a href="/rumbleu/">Pokémon Rumble U</a></li>
+				<li><a href="/dungeoninfinity/">Mystery Dungeon: Gates to Infinity</a></li>
+				<li><a href="/conquest/">Pokémon Conquest</a></li>
+				<li><a href="/pokepark2/">PokéPark 2: Wonders Beyond</a></li>
+				<li><a href="/rumble2/">Pokémon Rumble Blast</a></li>
+				<li><a href="/pokedex3d/">Pokédex 3D</a></li>
+				<li><a href="/pokedex3dpro/">Pokédex 3D Pro</a></li>
+				<li><a href="/typingds/">Learn With Pokémon: Typing Adventure</a></li>
+				<li><a href="/card/howtoplayds/">TCG How to Play DS</a></li>
+				<li><a href="/pokedexios/">Pokédex for iOS</a></li>
+				<li><a href="/pokemon/generation4.shtml"><b>Gen IV</b></a></li>
+				<li><a href="/diamondpearl/">Diamond & Pearl</a></li>
+				<li><a href="/platinum/">Platinum</a></li>
+				<li><a href="/heartgoldsoulsilver/">Heart Gold & Soul Silver</a></li>
+				<li><a href="/ranger3/">Pokémon Ranger: Guardian Signs</a></li>
+				<li><a href="/melee/">Pokémon Rumble</a></li>
+				<li><a href="/dungeon3/">Mystery Dungeon: Blazing, Stormy & Light Adventure Squad</a></li>
+				<li><a href="/pokepark/">PokéPark Wii - Pikachu's  Adventure</a></li>
+				<li><a href="/battle/">Pokémon Battle Revolution</a></li>
+				<li><a href="/dungeonsky/">Mystery Dungeon - Explorers of Sky</a></li>
+				<li><a href="/ranger2/">Pokémon Ranger: Shadows of Almia</a></li>
+				<li><a href="/dungeon2/">Mystery Dungeon - Explorers of Time & Darkness</a></li>
+				<li><a href="/ranch/">My Pokémon Ranch</a></li>
+				<li><a href="/battrio/">Pokémon Battrio</a></li>
+				<li><a href="/ssbb/">Smash Bros Brawl</a></li>
+				<li><a href="/pokemon/generation3.shtml"><b>Gen III</b></a></li>
+				<li><a href="/rubysapphire/">Ruby & Sapphire</a></li>
+				<li><a href="/fireredleafgreen/">Fire Red & Leaf Green</a></li>
+				<li><a href="/emerald/">Emerald</a></li>
+				<li><a href="/colosseum/">Pokémon Colosseum</a></li>
+				<li><a href="/xd/">Pokémon XD: Gale of Darkness</a></li>
+				<li><a href="/dash/">Pokémon Dash</a></li>
+				<li><a href="/pokemon_channel/">Pokémon Channel</a></li>
+				<li><a href="/pokemon_box/">Pokémon Box: RS</a></li>
+				<li><a href="/pinball_rs/">Pokémon Pinball RS</a></li>
+				<li><a href="/ranger/">Pokémon Ranger</a></li>
+				<li><a href="/mysteriousdungeon/">Mystery Dungeon Red & Blue</a></li>
+				<li><a href="/torouze/">PokémonTrozei</a></li>
+				<li><a href="/pikachu/">Pikachu DS Tech Demo</a></li>
+				<li><a href="/pokeparkfish/">PokéPark Fishing Rally</a></li>
+				<li><a href="/e-reader/">The E-Reader</a></li>
+				<li><a href="/pokemate/">PokéMate</a></li>
+				<li><a href="/pokemon/generation2.shtml"><b>Gen II</b></a></li>
+				<li><a href="/gs/">Gold/Silver</a></li>
+				<li><a href="/crystal/">Crystal</a></li>
+				<li><a href="/stadium2/">Pokémon Stadium 2</a></li>
+				<li><a href="/puzzlechallenge/">Pokémon Puzzle Challenge</a></li>
+				<li><a href="/mini/">Pokémon Mini</a></li>
+				<li><a href="/smash_bros_2/">Super Smash Bros. Melee</a></li>
+				<li><a href="/pokemon/generation1.shtml"><b>Gen I</b></a></li>
+				<li><a href="/rb/">Red, Blue & Green</a></li>
+				<li><a href="/yellow/">Yellow</a></li>
+				<li><a href="/puzzleleague/">Pokémon Puzzle League</a></li>
+				<li><a href="/snap/">Pokémon Snap</a></li>
+				<li><a href="/pinball/">Pokémon Pinball</a></li>
+				<li><a href="/stadiumjp/">Pokémon Stadium (Japanese)</a></li>
+				<li><a href="/stadium/">Pokémon Stadium</a></li>
+				<li><a href="/tradingcardgamegb/">Pokémon Trading Card Game GB</a></li>
+				<li><a href="/smash_bros/">Super Smash Bros.</a></li>
+
+				<li><strong>Miscellaneous</strong></li>
+				<li><a href="/games/mechanics.shtml">Game Mechanics</a></li>
+				<li><a href="/playpokemon">Play! Pokémon Championship Series</a></li>
+				<li><a href="/games/others.shtml">In Other Games</a></li>
+				<li><a href="/games/virtualconsole.shtml">Virtual Console</a></li>
+				<li><a href="/games/consoles.shtml">Special Edition Consoles</a></li>
+				<li><a href="/games/themes.shtml">Pokémon 3DS Themes</a></li>
+				<li><a href="/apps">Smartphone & Tablet Apps</a></li>
+				<li><a href="/virtualpet">Virtual Pets</a></li>
+				<li><a href="/amiibo">amiibo</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/manga/" class="navheader">Manga</a>
+			<ul>
+				<li><a href="/manga/">General Information</a>
+				<li><a href="/manga/dex">MangaDex</a></li>
+				<li><a href="/manga/characters">Character BIOs</a></li>
+				<li><a href="/manga/characters-new">Detailed BIOs</a></li>
+				<li><a href="/manga/chapter.shtml">Chapter Guides</a></li>
+				<li><a href="/manga/volume.shtml">Volume Guides</a></li>
+				<li><a href="/manga/rby/">RBG Series</a></li>
+				<li><a href="/manga/yellow/">Yellow Series</a></li>
+				<li><a href="/manga/gsc/">GSC Series</a></li>
+				<li><a href="/manga/rs/">RS Series</a></li>
+				<li><a href="/manga/frlg/">FRLG Series</a></li>
+				<li><a href="/manga/bf/">Emerald Series</a></li>
+				<li><a href="/manga/dp/">DP Series</a></li>
+				<li><a href="/manga/pt/">Platinum Series</a></li>
+				<li><a href="/manga/hgss/">HGSS Series</a></li>
+				<li><a href="/manga/bw/">BW Series</a></li>
+				<li><a href="/manga/b2w2/">B2W2 Series</a></li>
+				<li><a href="/manga/xy/">XY Series</a></li>
+				<li><a href="/manga/oras/">ORAS Series</a></li>
+				<li><a href="/manga/sunmoon/">SM Series</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/movies/" class="navheader">Movies</a>
+			<ul>
+				<li><strong>Anime</strong></li>
+				<li><a href="/movies/mewtwo/origin/">The Origin of Mewtwo</a></li>
+				<li><a href="/movies/mewtwo/">Mewtwo Strikes Back</a></li>
+				<li><a href="/movies/lugia/">The Power of One</a></li>
+				<li><a href="/movies/entei/">Spell Of The Unown</a></li>
+				<li><a href="/anime/epiguide/specials/002.shtml">Mewtwo Returns</a></li>
+				<li><a href="/movies/serebii/">Celebi: Voice of the Forest</a></li>
+				<li><a href="/movies/latias_latios/">Pokémon Heroes</a></li>
+				<li><a href="/movies/jirachi/">Jirachi - Wish Maker</a></li>
+				<li><a href="/movies/deoxys/">Destiny Deoxys!</a></li>
+				<li><a href="/movies/mew/">Lucario and the Mystery of Mew!</a></li>
+				<li><a href="/movies/kyogre/">Pokémon Ranger & The Temple of the Sea!</a></li>
+				<li><a href="/movies/dp/">The Rise of Darkrai!</a></li>
+				<li><a href="/movies/giratina/">Giratina & The Sky Warrior!</a></li>
+				<li><a href="/movies/arceus/">Arceus and the Jewel of Life</a></li>
+				<li><a href="/movies/celebi/">Zoroark - Master of Illusions</a></li>
+				<li><a href="/movies/victini/">Black: Victini & ReshiramWhite: Victini & Zekrom</a></li>
+				<li><a href="/movies/kyurem/">Kyurem VS The Sword of Justice</a></li>
+				<li><a href="/movies/meloetta/">-Meloetta's Midnight Serenade</a></li>
+				<li><a href="/movies/genesect/">Genesect and the Legend Awakened</a></li>
+				<li><a href="/movies/xy/">Diancie & The Cocoon of Destruction</a></li>
+				<li><a href="/movies/hoopa/">Hoopa & The Clash of Ages</a></li>
+				<li><a href="/movies/volcanion/">Volcanion and the Mechanical Marvel</a></li>
+				<li><a href="/movies/pokemon20/">Pokémon I Choose You!</a></li>
+				<li><a href="/movies/thepowerofus/">Pokémon The Power of Us</a></li>
+				<li><a href="/movies/mewtwoevolution/">Mewtwo Strikes Back Evolution</a></li>
+				<li><a href="/movies/secretsofthejungle/">Secrets of the Jungle</a></li>
+				<li><strong>Live Action</strong></li>
+				<li><a href="/movies/detectivepikachu/">Pokémon Detective Pikachu</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/movies/" class="navheader">Pikachu Shorts</a>
+			<ul>
+				<li><a href="/movies/pikachu1/">Pikachu's Summer Vacation</a></li>
+				<li><a href="/movies/pikachu2/">Pikachu's Rescue Adventure</a></li>
+				<li><a href="/movies/pikachu3/">Pikachu And Pichu</a></li>
+				<li><a href="/movies/pikachu4/">Pikachu's PikaBoo</a></li>
+				<li><a href="/movies/pikachu5/">Camp Pikachu!</a></li>
+				<li><a href="/movies/pikachu6/">Gotta Dance!!</a></li>
+				<li><a href="/movies/pikachu7/">Pikachu's Summer Festival!</a></li>
+				<li><a href="/movies/pikachu8/">Pikachu's Ghost Festival!</a></li>
+				<li><a href="/movies/pikachu9/">Pikachu's Island Adventure!</a></li>
+				<li><a href="/movies/pikachu10/">Pikachu's Exploration Club</a></li>
+				<li><a href="/movies/pikachu11/">Pikachu's Great Ice Adventure</a></li>
+				<li><a href="/movies/pikachu12/">Pikachu's Sparkling Search</a></li>
+				<li><a href="/movies/pikachu13/">Pikachu's Really Mysterious Adventure</a></li>
+				<li><a href="/movies/eevee/">Eevee & Friends</a></li>
+				<li><a href="/movies/klefki/">Pikachu, What's This Key?</a></li>
+				<li><a href="/movies/pikachumusic/">Pikachu & The Pokémon Music Squad</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="/card/" class="navheader">Trading Cards</a>
+			<ul>
+				<li><a href="/tcglive/">Pokémon TCG Live</a></li>
+				<li><a href="/card/dex/">Cardex</a></li>
+				<li><a href="/card/dex/extra">-Extra Pokémon Types</a></li>
+				<li><a href="/card/dex/trainers">Trainer Cards</a></li>
+				<li><a href="/card/dex/energy">Energy Cards</a></li>
+				<li><a href="/card/dex/extra/altart.shtml">Alternate Art Cards</a></li>
+				<li><a href="/card/raidbattles">Raid Battles</a></li>
+				<li><a href="/card/english.shtml"><b>English Sets</b></a></li>
+				<li><a href="/card/brilliantstars">-Brilliant Stars</a></li>
+				<li><a href="/card/fusionstrike">-Fusion Strike</a></li>
+				<li><a href="/card/celebrations">-Celebrations</a></li>
+				<li><a href="/card/evolvingskies">-Evolving Skies</a></li>
+				<li><a href="/card/chillingreign">-Chilling Reign</a></li>
+				<li><a href="/card/battlestyles">-Battle Styles</a></li>
+				<li><a href="/card/shiningfates">-Shining Fates</a></li>
+				<li><a href="/card/vividvoltage">-Vivid Voltage</a></li>
+				<li><a href="/card/champion'spath">-Champion's Path</a></li>
+				<li><a href="/card/darknessablaze">-Darkness Ablaze</a></li>
+				<li><a href="/card/rebelclash">-Rebel Clash</a></li>
+				<li><a href="/card/swordshield">-Sword & Shield</a></li>
+				<li><a href="/card/cosmiceclipse">-Cosmic Eclipse</a></li>
+				<li><a href="/card/hiddenfates">-Hidden Fates</a></li>
+				<li><a href="/card/unifiedminds">-Unified Minds</a></li>
+				<li><a href="/card/unbrokenbonds">-Unbroken Bonds</a></li>
+				<li><a href="/card/pokemondetectivepikachu">-Detective Pikachu</a></li>
+				<li><a href="/card/teamup">-Team Up</a></li>
+				<li><a href="/card/xy.shtml">-XY Series</a></li>
+				<li><a href="/card/bw.shtml">-BW Series</a></li>
+				<li><a href="/card/dpt.shtml">-DPtHS Series</a></li>
+				<li><a href="/card/ex.shtml">-EX Series</a></li>
+				<li><a href="/card/neo.shtml">-Neo/eSeries</a></li>
+				<li><a href="/card/first.shtml">-First Gen Series</a></li>
+				<li><a href="/card/engpromo.shtml"><b>English Promos</b></a></li>
+				<li><a href="/card/swshpromos">-SWSH Promos</a></li>
+				<li><a href="/card/smpromos">-SM Promos</a></li>
+				<li><a href="/card/xypromos">-XY Promos</a></li>
+				<li><a href="/card/bwpromos">-BW Promos</a></li>
+				<li><a href="/card/hgsspromo">-HGSS Promo</a></li>
+				<li><a href="/card/popseries.shtml">-POP Series</a></li>
+				<li><a href="/card/japanese.shtml"><b>Japanese Sets</b></a></li>
+				<li><a href="/card/starbirth">-Star Birth</a></li>
+				<li><a href="/card/vmaxclimax">-VMAX Climax</a></li>
+				<li><a href="/card/fusionarts">-Fusion Arts</a></li>
+				<li><a href="/card/blueskystream">-Blue Sky Stream</a></li>
+				<li><a href="/card/skyscrapingperfect">-Skyscraping Perfect</a></li>
+				<li><a href="/card/eeveeheroes">-Eevee Heroes</a></li>
+				<li><a href="/card/silverlance">-Silver Lance</a></li>
+				<li><a href="/card/jetblackpoltergeist">-Jet Black Poltergeist</a></li>
+				<li><a href="/card/matchlessfighter">-Matchless Fighter</a></li>
+				<li><a href="/card/singlestrikemaster">-Single Strike Master</a></li>
+				<li><a href="/card/rapidstrikemaster">-Rapid Strike Master</a></li>
+				<li><a href="/card/shinystarv">-Shiny Star V</a></li>
+				<li><a href="/card/sword">-Sword</a></li>
+				<li><a href="/card/shield">-Shield</a></li>
+				<li><a href="/card/tagallstars">-Tag All Stars</a></li>
+				<li><a href="/card/vs">-Pokémon VS</a></li>
+				<li><a href="/card/jppromo.shtml"><b>Japanese Promos</b></a></li>
+				<li><a href="/card/spromo">-S Promos</a></li>
+				<li><a href="/card/smpromo">-SM Promos</a></li>
+
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+
+<script type="text/javascript">
+
+function loadMobileLbar(){
+	var tbar_lbar_open=document.getElementById('tbar_lbar_open'),
+		tbar_backdrop=document.getElementById('tbar_backdrop'),
+		lbar=document.getElementById('lbar'),
+		lbarLIs=document.querySelectorAll("#lbar_ul>li .navheader"),
+		lbarLIULs=document.querySelectorAll("#lbar_ul>li>ul");
+
+	/* lbar display/hide */
+	tbar_lbar_open.onclick=function() {
+		if (lbar.className.indexOf("show") > -1){//hide
+			lbar.className = lbar.className.replace("show","");
+			bodyRemoveClass("nav_modal");
+		} else{//show
+			lbar.classList.add("show");
+			bodyAddClass("nav_modal");
+		}
+
+		return false;
+	}
+
+
+	/* background clicked when bar shown */
+	tbar_backdrop.onclick=function() {// if the backdrop is clicked, hide menus
+		lbar.className = lbar.className.replace("show","");
+		rbar.className = rbar.className.replace("show","");
+		bodyRemoveClass("nav_modal");
+		return false;
+	}
+
+	/* handle expand/collapse sub-menus in lbar by attaching click events */
+	for(i=0; i<lbarLIs.length; i++){
+		lbarLIs[i].onclick=function(i) {
+			var elem=this.parentNode.getElementsByTagName("UL")[0];
+			var elemDisp=(elem.className.indexOf("show") === -1)
+
+			// hide all ul, then open one if clicked
+			for(i2=0; i2<lbarLIULs.length; i2++){
+				lbarLIULs[i2].className = lbarLIULs[i2].className.replace("show","");
+			}
+
+			if(elemDisp){
+				elem.classList.add("show");
+			}
+
+			return false;
+		}
+	}
+}
+function loadMobileRbar(){
+	var tbar_rbar_open=document.getElementById('tbar_rbar_open'),
+		rbar=document.getElementById('rbar');
+
+	/* rbar display/hide */
+	tbar_rbar_open.onclick=function() {
+		if (rbar.className.indexOf("show") > -1){//hide
+			rbar.className = rbar.className.replace("show","");
+			bodyRemoveClass("nav_modal");
+		} else{//show
+			rbar.classList.add("show");
+			bodyAddClass("nav_modal");
+		}
+
+		return false;
+	}
+}
+
+loadMobileLbar();
+
+/* attach listener to for rbar events AFTER page loads (because #rbar hasn't loaded at this point in page ) */
+if(window.addEventListener){
+	window.addEventListener('load', loadMobileRbar)
+} else{
+	window.attachEvent('onload', loadMobileRbar)
+}
+</script>
+
+
+
+<div id="content">
+		<div class="center" style="margin-top:16px;height:100px"><div id="nn_lb1"></div><div id="nn_mobile_lb1"></div></div>
+<main>
+
+
+<div class="post">
+<h2><a href="/news/2021/25-December-2021.shtml" id="25-December-2021">Saturday: Pokémon GO - Winter Wonderland Event + Pokémon Masters EX </a></h2><p class="info"><span class="date">25-12-2021 06:00 GMT / 01:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  06:00 GMT</p>
+
+<div class="pics"><a href="/pokemongo/events/winterwonderland.shtml"><img src="/pokemongo/holiday2021.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Winter Wonderland mini-event is now rolling out. This event runs from 10:00 local time until 20:00 local time on December 26th and features a special Collection Challenge focused on trading which runs until December 31st, as well as Field Research to get Delibird. All trades will be possible over 40km until 18:00 UTC on Monday December 27th<br />
+We have added all details of the event in our <a href="/pokemongo/events/winterwonderland.shtml">Winter Wonerland section</a></p></div>
+
+
+
+<div class="pics"><a href="/pokemonmasters/events/pokemonmastersdaydecember2021.shtml"><img src="/pokemonmasters/events/pokemonmastersdaydecember2021.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>A special event has begun. For one day only each month on the 25th, the Pokémon Masters Day event will be held. This event will give you a variety of rewards for completion. Alongside this, a special 25 Gem for 11 Sync Pair scout is now live. This also unlocks Candice's 6 Star EX and the Sync Grids for a few more Sync Pairs. We've updated our  <a href="/pokemonmasters/events/pokemonmastersdaydecember2021.shtml">Pokémon Masters Day page</a> with the details of this month's event</p></div>
+
+
+<div class="pics"><a href="/pokemonunite/eventmissions.shtml"><img src="/pokemonunite/specialgift.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>The special gifts are livei n Pokémon UNITE. Each day you will receive a special gift, but today, December 29th and January 1st you will be able to open a special box that gives you a choice of 4 items. Today's box contians 600 Aeos Coins, 375 Aeos Tickets, 40 Item Enhances or 5 Holowear Tickets and can be redeemed until December 28th </p></div>
+
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/24-December-2021.shtml" id="24-December-2021">Friday: Pokémon Masters EX + Pokémon UNITE + Pokémon Sound Library</a></h2><p class="info"><span class="date">24-12-2021 05:00 GMT / 00:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  12:13 GMT<br />Edit @ 06:00: Pokémon Masters | Edit @ 10;20: Character Biography | Edit @ 12:13: Episode Details</p>
+
+
+
+<div class="pics"><a href="/brilliantdiamondshiningpearl"><img src="/soundlibrary.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Sound Library</p>
+<p>The Pokémon Company have opened the <a href="https://soundlibrary.pokemon.co.jp/" target="blank" rel="nofollow">Pokémon DP Sound Library</a> for a limited time. This allows for you to listen to all 149 songs from Pokémon Diamond & Pearl for free as well as listen to set playlists. You also have the ability to download the music as long as it's not used for profit. It also provides downloads of Sheet Music for the following themes: Route 201, Lake and Battle! Wild Pokémon. The website is region locked to Japan<br />
+To commemorate it and Brilliant Diamond & Shining Pearl's launch, a special 5 minue 52 second performance of some of the music from the game is to release at 09:00 UTC today
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/A6Gbuh05OTs" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/exlink.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>Pokémon Masters EX has announced the Sinnoh arc of the Villain Story including the coming Villain Prelude event and the addition of <a href="/pokemonmasters/syncpairs/cynthia.shtml">Cynthia & Giratina</a> as a Sync Pair starting December 27th 2021<br />
+Edit @ 06:01: They have also confirmed a few coming features. The Legendary Gauntlet will arrive on January 20th and hve you face Legendary Arenas in a row to get new Lucky Cookies<br />
+There will be a Jukebox added to the game in late January that lets you change music and play them in battle. These are unlocked through a variety of means including raising to 6 star EX
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/9Qep0ImvVHg" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+
+<div class="pics"><a href="/pokemonunite"><img src="/pokemonunite/photochallenge.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>Pokémon UNITE has added the new Photo Callenge Mode. Whenever you play a game between now and January 6th, you will obtain Snowflakes that can be used to unlock silhouettes. As you unlock more Silhouettes, you will get more rewards including seasonal outfits.<br />
+You earn 20 Snowflakes from each Standard or Quick Battle, and 30 Snowflakes for each Ranked Battle and Snowball Battle</p></div>
+
+
+<div class="pics"><a href="/anime/epiguide/pokemon/1181.shtml"><img src="/1181.jpg" alt="Gengar Does Its Best! The Road to Gigantamax!!" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon 2019 </p>
+<p>The latest episode has aired in Japan today. This episode features Ash, Goh & Allister hunt down some Max Mushrooms to make Max Soup. The <a href="/anime/dex"><u>AniméDex</u></a> has  been updated with the  contents of this <a href="/anime/epiguide/pokemon/1181.shtml"><u>episode</u></a>. Click the picture to go to the section but be warned however as it contains spoilers.</p></div>
+
+<div class="pics"><a href="/anime/characters/goh.shtml"><img src="/anime/pictures/pokemon/1093/DP291.jpg" alt="Character Biography - Goh" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon	2019 - Character Biography</p>
+<p>With the episode that has aired in Japan today, we have been able to update Goh's biography with new Pokémon he obtained in this week's episode. Be warned as it contains spoilers.</p></div>
+
+<div class="pics"><a href="/pokemonmasters/mainstory.shtml"><img src="/pokemonmasters/events/newworlddilemma.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>The next Story element for Pokémon Masters EX has gone live. This is the third part of the Legendary Adventures, a new element which brings old Legendary Events back as part of the main story. Today the story <a href="/pokemonmasters/legendaryadventures/newworlddilemma.shtml">New World Dilemma</a> is added, which allows all players to get the sync pair of <a href="/pokemonmasters/syncpairs/cyrus.shtml">Cyrus & Palkia</a><br />
+Alongside this, the <a href="/pokemonmasters/events/legendaryarenalatiosdecember2021.shtml">Legendary Arena: Latios</a> has opened</p></div>
+
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/23-December-2021.shtml" id="23-December-2021">Thursday: Pokémon Sword & Shield - Online Competition + Pokémon GO - Holiday Event + Pokémon Masters EX - Sonia Scout</a></h2><p class="info"><span class="date">23-12-2021 05:41 GMT / 00:41 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  21:00 GMT<br />Edit @ 06:00: Pokémon Masters EX | Edit @ 08:02: BDSP Concert | Edit @ 14:00: Pokémon Evolutions | Edit @ 21:00: Pokémon GO New Years Event</p>
+
+
+<div class="pics"><a href="/swordshield/onlinecompetitions/testyourluck.shtml"><img src="/swordshield/onlinecompetitions/testyourluck.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>The next online competition has been announced. This competition, the Test Your Luck! is a Single Battle competition that only allows for you to use the move Metronome. All players who enter get 50 BP<br />
+Registration is open now to January 6th 23:59 UTC. Battles will run from January 7th 00:00 UTC to  January 9th 23:59 UTC.<br />
+We have full details of this competition, including an eligible Pokémon list, in our <a href="/swordshield/onlinecompetitions/testyourluck.shtml">Test Your Luck!</a> section</p></div>
+
+<div class="pics"><a href="/brilliantdiamondshiningpearl"><img src="/dpconcert.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Brilliant Diamond & Shining Pearl</p>
+<p>The Pokémon Company are to show a special orchestrated performance of the Pokémon Diamond & Pearl soundtrack tomorrow on YouTube at 09:00 UTC. This will include various tracks from the games including Cynthia's theme, which recently won a poll on the official Twitter Account for favourite theme from the games. The performance will last 5 minutes & 52 seconds. We'll provide the stream as it comes so be sure to check back</p></div>
+
+
+<div class="pics"><a href="/pokemongo/events/newyears2022.shtml"><img src="/pokemongo/newyears2021.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the next Pokémon GO event. This event is the New Years event and is due to run from December 31st at 22:00 to January 4th at 20:00 local time and introduces a costumed Hoothoot and a Slowking with 2022 glasses into the game. The Hoothoot will be shiny and Hoothoot will be shiny after the event<br />
+There will be 2* Hatch Stardust, Hatch Candy and 50% hatch Distance<br />
+New Years Hat Pikachu, Seel, 2020 Glasses Slowpoke, New Years Hat Hoothoot, Stantler, Party Hat Wurmple, Fearow and Loudred will be in the wild<br />
+2020 Glasses Slowpoke, New Years Hat Hoothoot, Party Hat Wobbuffet and Mawile will be in 1 Star Raids<br />
+Party Hat Raticate, Party Hat Nidorino, Machamp, Party Hat Gengar and 2022 Glasses Slowking will be in 3 Star raids<br />
+Party Hat Bulbasaur, Party Hat Charmander, Party Hat Squirtle, 2020 Glasses Slowpoke, New Year Hat Hoothoot, New Year Hat Pichu and Party Hat Wurmple will be in 7km eggs<br />
+Party Hat Bulbasaur, Party Hat Charmander, Party Hat Squirtle, 2020 Glasses Slowpoke, New Year Hat Hoothoot will be in Field Research<br />
+There will be Timed Research 
+<br />
+There will be special outfits available in the in-game Style Shop
+</p></div>
+
+
+<div class="pics"><a href="/anime/epiguide/evolutions"><img src="/evolutions.jpg" alt="Pokémon Evolutions" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Anime Department</h3>
+<p class="title">Pokémon Evolutions</p>
+<p>The final episode of the Pokémon Evolutions web anime series is now live on YouTube and Pokémon TV. This series is a web based show separate from the main anime which focuses on several key aspects across the world of Pokémon. This episode is "The Discovery" and is based around Green, Elaine and Trace in their hunt for Mewtwo in Cerulean Cave. The episode can be found below. We're currently updating all our databases with the content of this episode. <br />
+Edit @ 14:20: We have updated the <a href="/anime/epiguide/evolutions/008.shtml">Episode Page</a> with full details on this episode<br />
+Edit @ 15:00: The English version has now been released 
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/_-K-sVn8Iko" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+
+</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events/winterwishes.shtml"><img src="/pokemonmasters/soniascout.jpg" alt="Pokémon Masters - Winter Wishes " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>As part of the Winter Wishes event, a new Scout is now live which introduces the Sync Pair of <a href="/pokemonmasters/syncpairs/sonia.shtml">Sonia & Yamper</a>. It runs until January 8th.</p></div>
+
+<div class="pics"><a href="/pokemongo/events/holidayevent2021:part2.shtml"><img src="/pokemongo/holiday2021i.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Holiday Event Part 2 is now rolling out. This event runs from 10:00 local time until 20:00 local time on December 31st and features the addition of Begmite & Avalugg into the game alongside the current Costume Pokémon and Shiny Galarian Darumaka.<br />
+In addition to that, new <a href="/pokemongo/raidbattles.shtml">Raid Bosses</a> are running<br />
+We have added all details of the event in our <a href="/pokemongo/events/holidayevent2021:part2.shtml">Holiday Event 2021 section</a></p></div>
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/22-December-2021.shtml" id="22-December-2021">Wednesday: Pokémon Brilliant Diamond & Shining Pearl - Patch + Pokémon GO Holiday Event + Pokémon Masters EX - Deck The Halls</a></h2><p class="info"><span class="date">22-12-2021 01:01 GMT / 20:01 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  21:00 GMT<br />Edit @ 06:00: Pokémon Masters & Café Mix | Edit @ 20:00: Pokémon GO Holiday Event | Edit @ 21:00: Pokémon GO January events</p>
+
+<div class="pics"><a href="/brilliantdiamondshiningpearl/patch.shtml"><img src="/brilliantdiamondshiningpearl/title.jpg" border="0" alt="Pokémon: Sword & Shield Coverage 1" width="300" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Brilliant Diamond & Shining Pearl Coverage </p>
+<p>Pokémon Brilliant Diamond & Shining Pearl has received a new patch. This patch is Version 1.1.3 and provides a variety of bug fixes including the notification of Repels ending and more. We're currently collating what has been added so be sure to keep checking back</p></div>
+
+<div class="pics"><a href="/pokemongo/events/holidayevent2021:part2.shtml"><img src="/pokemongo/holiday2021i.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Holiday Event Part 2 is now rolling out in Asia Pacific Regions This event runs from 10:00 local time until 20:00 local time on December 31st and features the addition of Begmite & Avalugg into the game alongside the current Costume Pokémon and Shiny Galarian Darumaka.<br />
+In addition to that, new <a href="/pokemongo/raidbattles.shtml">Raid Bosses</a> are running<br />
+We have added all details of the event in our <a href="/pokemongo/events/holidayevent2021:part2.shtml">Holiday Event 2021 section</a></p></div>
+
+<div class="pics"><a href="/pokemongo/"><img src="/pokemongo/may2020breakthrough.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the next Pokémon GO events for January 2022.<br />
+First, the Research Breakthrough Reward has been announced. From January  1st 2022 at 20:00 UTC to February 1st 2022 at 20:00 UTC you'll get a Onix alongside Steelix Mega Energy<br /><br />
+Heatran will be in raids from January 7th through 15th<br />
+Genesect Shock Drive will be in raids from January 15th through 24th<br />
+Regice will be in raids from January 24th through February 1st<br />
+Mega Aerodactyl will be in Mega Raids from January 7th - February 1st<br />
+A New Year event will run from December 31st at 22:00 local time to January 4th at 20:00 local time<br />
+Mountains of Power is an event focused around Spark's discoveries through terrain reminiscent of mountains from Johto & Sinnoh will run from January 7th through January 13th<br />
+An event themed around the Kanto Power Plant will run from January 19th through February 1st
+</p></div>
+
+<div class="pics"><a href="/pokemongo/events/spotlighthour.shtml"><img src="/pokemongo/spotlighthour.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the Spotlight Hours for the month of January. They happen at 6pm to 7pm local time are as follows:<br />
+January  4th - Solosis  - 2* Transfer Candy<br />
+January 11th -  Diglett  - 2* Catch Stardust<br />
+January 18th - Plusle - 2* Catch Candy<br />
+January 25th - Minun  - 2* Transfer Candy<br /></p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events/deckthehallsdecember2021.shtml"><img src="/pokemonmasters/events/deckthehallsdecember2021.jpg" alt="Pokémon Masters - Winter Wishes " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>The Deck the Halls event has begun in Pokémon Masters EX. This event is a repeat of last year's holiday event. Alongside this, a special Seasonal Scout is live featuring the Sync Pairs of <a href="/pokemonmasters/syncpairs/skyla.shtml">Skyla & Togekiss</a> and  <a href="/pokemonmasters/syncpairs/erika.shtml">Erika & Comfey</a>. It runs until January 4th.<br />
+We're currently compiling all details in our <a href="/pokemonmasters/events/deckthehallsdecember2021.shtml">Deck the Halls</a> event section</p></div>
+
+<div class="pics"><a href="/cafemix"><img src="/cafemix/neworders.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>New orders have been added to Pokémon Café ReMix. This adds stages 475-500 to the game. We're currently cataloguing all these new stages and details so be sure to keep checking back. A new update has also gone live which adds a Happy Bonus that you will get randomly before a match. This doubles all experience and rewards for completion<br />
+
+Edit @ 07:28 We have updated the <a href="/cafemix/mainorders.shtml">Main Orders</a> with the contents of today's update. The next batch of Orders will be released on December 29th  2021<br />
+
+</p></div>
+
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/21-December-2021.shtml" id="21-December-2021">Tuesday: Pokémon Masters EX - New Update</a></h2><p class="info"><span class="date">21-12-2021 07:13 GMT / 02:13 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  08:03 GMT</p>
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/exlink.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>Pokémon Masters EX has pushed a new update. This update resolves a new issue with Paid Gems where an error occured during purchase. This update also includes the events and Sync Pairs due out over the next month.<br />
+We have begun updating the section for the new Sync Pairs of <a href="/pokemonmasters/syncpairs/lucas.shtml">Lucas & Dialga</a>, <a href="/pokemonmasters/syncpairs/cynthia.shtml">Cynthia & Giratina</a>, <a href="/pokemonmasters/syncpairs/sabrina.shtml">Sabrina & Chingling</a> & <a href="/pokemonmasters/syncpairs/volkner.shtml">Volkner & Electivire</a><br />
+Edit @ 08:03: We have updated the <a href="/pokemonmasters/luckyskills.shtml">Lucky Skills</a> page with the new Lucky Skills that are available
+</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/20-December-2021.shtml" id="20-December-2021">Monday: Pokémon UNITE - Dragonite Release & Battle Pass + Pokémon Masters EX</a></h2><p class="info"><span class="date">20-12-2021 00:00 GMT / 19:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  18:00 GMT<br />Edit @ 08:00: Pokémon Masters EX | Edit @ 18:00: Pokémon GO</p>
+
+<div class="pics"><a href="/pokemonunite/"><img src="/pokemonunite/dragoniteholiday.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>Pokémon UNITE has received a small update which adds a variety of things to the game.<br />
+First, the Pokémon <a href="/pokemonunite/pokemon/dragonite.shtml">Dragonite</a> is now available to purchase in the in-game store.<br />
+Next, there is new <a href="/pokemonunite/holowear.shtml">Holowear</a> available including the Premium Cook Style Snorlax for 1539 Gems until December 26th when it'll change to 2199 Gems, as well as Holiday Style outfits for Dragonite, Blastoise, Garchomp, Gardevoir and Mamoswine which cost 400 Gems each<br /><br />
+In addition to this, a new <a href="/pokemonunite/battlepass.shtml">Battle Pass</a>, Agent of Disaster, is live, which runs until January 2022. This pass offers the Holowear of Concert Style Pikachu at the start and Dark Suit Style Absol at the end for those who purchase the Premium Pass<br />
+Edit @ 07:00: A new Balance Patch has gone live featuring a variety of changes to Pokémon. We're currently compiling all details in our <a href="/pokemonunite/patch.shtml">Patch Section</a><br />
+Edit @ 07:54: The patch went live late but we now have full details in the Patch Section and <a href="/pokemonunite/pokemon.shtml">Pokémon Listings</a></p></div>
+
+
+<div class="pics"><a href="/pokemongo/communityday/january2022.shtml"><img src="/pokemongo/community0122.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Niantic have announced the next Pokémon GO Community Day on January 16th will focus on Spheal. This event will 3* Catch Experience and has 3 Hour Incense & 3 Hour Lure Modules . However, it will also give out the moves Icicle Spear and Powder Snow to Walrein. Icicle Spear will do 60 damage in both Trainer Battles and Gyms.  You will be able to purchase a ticket to receive Special Research "The Spheal Deal". <br />
+The Community Day runs at 11am to 5pm in each local time zone</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/events/deckthehalls.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>The next event has been announced. This event is a repeat of last year's Holiday event, Deck the Halls, and features the story of Erika and Skyla helping sort out the holidays in Pasio. It runs from Wednesday December 22nd  2021</p></div>
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/19-December-2021.shtml" id="19-December-2021">Sunday: Pokémon GO - Community Day</a></h2><p class="info"><span class="date">19-12-2021 07:31 GMT / 02:31 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  13:17 GMT<br />Edit @ 13:17: Pokémon of the Week</p>
+
+<div class="pics"><a href="/pokemongo/communityday/december2021.shtml"><img src="/pokemongo/community1221.jpg" alt="Pokémon GO" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO - Community Day</p>
+<p>Today marks Day 2 the Pokémon GO Community Day. On this day, for six hours in each region, Eevee, Duskull, Shinx, Tepig and Oshawott will appear, enmass, in Pokémon GO with a chance of their shiny appearing. The other Pokémon will also spawn in lower numbers and all will appear outside of the event hours until the end of the event. During this event, until December 20th at 18:00 UTC, when you evolve various Pokémon from the last two years of Community Day, you'll get their special move. This coincides with 25% egg distance, 2* Catch Experience & 2* Catch Stardust and 3 hour Incense. This runs at these times:<br />
+It runs from 11am to 5pm in your local time.</p></div>
+
+<div class="pics"><a href="/potw-swsh/866.shtml"><img src="/potw-swsh/866-i.jpg" alt="Pokémon of the Week - Mr. Rime" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Pokémon of the Week Department</h3>
+<p class="title">Who's That Pokémon</p>
+<p>Today marks the one-hundred & nineth entry into the Generation VIII competitive field with a Galar Pokémon. These entries are created by the visitors for the visitors and then compiled by our writers Psynergy, Jellal, Mestorn, Aminith & Mcdanger. To get involved, <a href="https://forums.serebii.net/forums/potw-collaboration.210/" target="blank"><u><b>Click here for the discussion forum</b></u></a> <br />Today, we are covering a Pokémon introduced in the eighth generation. It's highly skilled at tap-dancing. It waves its cane of ice in time with its graceful movements. Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly. So, here it is, the one-hundred & nineth entry, Mr. Rime</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/18-December-2021.shtml" id="18-December-2021">Saturday: Pokémon GO - Community Day + Pokémon Masters EX  - Nessa Scout</a></h2><p class="info"><span class="date">18-12-2021 06:00 GMT / 01:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  09:14 GMT<br />Edit @ 09:14: BDSP Gift</p>
+
+<div class="pics"><a href="/brilliantdiamondshiningpearl/serialcode.shtml"><img src="/brilliantdiamondshiningpearl/gift.jpg" border="0" alt="Pokémon: Sword & Shield Coverage 1" width="300" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Brilliant Diamond & Shining Pearl - Statue Distribution</p>
+<p>A new Mystery Gift distribution has begun. As part of the official Christmas Stream, a code was distributed: <b>MERRYCHR1STMAS</b>. This will offer you a distribution of Color Statues of Rhyperior, Electivire, Glaceon, Pachirisu & Lucario for your Secret Base. This distribution ends on December 25th 2021</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events/winterwishes.shtml"><img src="/pokemonmasters/events/nessaseasonal.jpg" alt="Pokémon Masters - Winter Wishes " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>As part of the Winter Wishes event, a new Seasonal Scout is now live which introduces the Sync Pair of <a href="/pokemonmasters/syncpairs/nessa.shtml">Nessa & Eiscue</a>. It runs until January 1st.</p></div>
+
+<div class="pics"><a href="/pokemongo/communityday/december2021.shtml"><img src="/pokemongo/community1221.jpg" alt="Pokémon GO" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon GO - Community Day</p>
+<p>Today marks Day 1 the Pokémon GO Community Day. On this day, for six hours in each region, Machop, Roselia, Swablu, Gible, Snivy & Fletchling will appear, enmass, in Pokémon GO with a chance of their  appearing. During this event, until December 20th at 18:00 UTC, when you evolve various Pokémon from the last two years of Community Day, you'll get their special move. This coincides with 25% egg distance, 2* Catch Experience & 2* Catch Stardust and 3 hour Incense. This runs at these times:<br />
+It runs from 11am to 5pm in your local time.</p></div>
+
+</div>
+<!-- end_news -->
+<div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/17-December-2021.shtml" id="17-December-2021">Friday: Pokémon Sword & Shield - Raid Event + Pokémon Café ReMix - New Events & Alolan Vulpix Event + Pokémon Shirts</a></h2><p class="info"><span class="date">17-12-2021 00:03 GMT / 19:03 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  17:35 GMT<br />Edit @ 05:06: Pokémon Shirts | Edit @ 05;52: Pokémon Café ReMix | Edit @ 06:01: Alolan Vulpix Event | Edit @ 10:20: Character Biography | Edit @ 11:50: Episode details | Edit @ 17:35: Pokémon GO Community Day</p>
+
+
+
+<div class="pics"><a href="/swordshield/maxraidbattles/eventden-holiday2021.shtml"><img src="/swordshield/winterraids.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>The Wild Area Event has now shifted in Pokémon Sword & Shield for a new Extra Event. With this, for the next few days, Pokémon themed around Winter will be available, with Shiny Delibird being available. It runs until December 26th at 23:59 UTC We're currently compiling all details of the event so be sure to keep checking back.  <br />
+Edit @ 00:12: We have updated our section with full details of this <a href="/swordshield/maxraidbattles/eventden-holiday2021.shtml">Max Raid Battle Event</a>, as well as updated our <a href="/itemdex">ItemDex</a> for TR locations.</p></div>
+
+<div class="pics"><a href="/cafemix/"><img src="/cafemix/newyear.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>The next Pokémon Café ReMix events have been announced. These events include the New Year event as well as the event that boosts Shiny Pokémon changes.<br />
+First there will be a special Piplup outfit given for New years as a log in bonus when you log in between December 29th and January 12th<br />
+There will be special shiny boosts in the game. Shiny Eevee will be more common from December 29th through January 1st while Shiyn Minccino will be available more often from January 1st through January 4th<br />
+Two special packs will be released on December 29th giving New Year outfits for Pikachu and Meowth. The 2022 Pikachu Lucky Pack and 2022 Meowth Lucky Pack will include items and golden acorns<br />
+There will be a Training Week event where all Pokémon will be available for the daily bonus and the experience gained will also be doubled. This runs from December 29th through January 4th<br />
+A Points Event will start on January 1st and feature Pichu. It will run from January 1st through January 12th<br />
+The January Monthly Goal has also been announced. This pass will allow for you to get a Scorbunny Tropical Vacation outfit and a special outfit for Snubbull
+</p></div>
+
+<div class="pics"><a href="/pokemongo/communityday/december2021.shtml"><img src="/pokemongo/community1221.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Ahead of tomorrow's Pokémon GO Community Day, the ticket for the Special Research is now available for purchase. This Special Research will give a variety of tasks and rewards based around the various Pokémon and costs £0.79/$0.99 to purchase</p></div>
+
+<div class="pics"><a href="/cafemix/events/alolanvulpixpointsevent.shtml"><img src="/cafemix/alolanvulpixpointsevent.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>The Pokémon Café ReMix Alolan Vulpix Points Event has begun. This event has players collect points by playing various stages in order to recruit <a href="/cafemix/pokemon/vulpix-alolanform.shtml">Alolan Vulpix</a>. This runs until December 17th 2021<br />
+Alongside this, a new Holiday Pack is now available to purchase in the shop which gives the special outfit of Holiday Tree Torterra.</p></div>
+
+<div class="pics"><a href="/anime/epiguide/pokemon/1180.shtml"><img src="/1180.jpg" alt="Ghost Train departs..." loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon 2019 </p>
+<p>The latest episode has aired in Japan today. This episode features Ash & Goh follow Allister onto a ghost train, only for Ash to get possessed. The <a href="/anime/dex"><u>AniméDex</u></a> has  been updated with the  contents of this <a href="/anime/epiguide/pokemon/1179.shtml"><u>episode</u></a>. Click the picture to go to the section but be warned however as it contains spoilers.</p></div>
+
+<div class="pics"><a href="/anime/characters/goh.shtml"><img src="/anime/pictures/pokemon/1093/DP291.jpg" alt="Character Biography - Goh" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title" >Pokémon	2019 - Character Biography</p>
+<p>With the episode that has aired in Japan today, we have been able to update Goh's biography with new Pokémon he obtained in this week's episode. Be warned as it contains spoilers.</p></div>
+
+<div class="pics"><a href="/pokemonshirts"><img src="/pokemonshirts/kantorenewal.jpg" width="300" alt="Pokémon Shirts" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Shirts</p>
+<p>A new set of Pokémon Shirts has been released by <a href="https://pokemon.originalstitch.com/en/shirts.html" target="blank" rel="nofollow">Original Stitch</a>. These shirts add 36 new patterns, replacing old ones, for a variety of Kanto Pokémon including the starters, Articuno, Zapdos, Moltres, Dragonite and more </p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/16-December-2021.shtml" id="16-December-2021">Thursday: Pokémon Masters EX - Holiday Event + Pokémon GO - Holiday Event + Pokémon Café ReMix - Holiday Outfit + Pokémon Evolutions</a></h2><p class="info"><span class="date">16-12-2021 06:00 GMT / 01:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  20:47 GMT<br />Edit @ 08:00: Pokémon Café ReMix | Edit @ 14:14: Pokémon Evolutions | Edit @ 18:12: Pokémon GO Tour | Edit @ 20:47: Pokémon GO Postcard Book</p>
+
+<div class="pics"><a href="/pokemongo/ticketevents/pokemongotourjohto.shtml"><img src="/pokemongo/johtotour.jpg" width="300"  alt="Pokémon GO" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Tour Day 2 event has been announced. This event runs on February 27th and will be in the following lovations: Montery Mexico, Abu Dhabi UAE and Kaohsiung, Taiwan. Tickets will cost $25 and features increased spawns of Kanto Pokémon<br />
+In each location there will be realworld habitats with their own Collection Challenges<br />
+There will be Special Research<br />
+You can do 6 SDpecial Trades at the event<br />
+There will be 2* Hatch Candy and Incubators will work with 25% distance<br />
+There is 9 Free Raid Passes from Gyms when spun<br />
+There will be special stickers obtained from PokéStops and gifts</p></div>
+
+<div class="pics"><a href="/pokemongo/"><img src="/pokemongo/postcardbook.jpg" width="300"  alt="Pokémon GO" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Postcard feature is now live. This feature asllows for you to pin various postcards from gifts that you either obtain from PokéStopd or receive from friends</p></div>
+
+
+<div class="pics"><a href="/pokemonmasters/events/winterwishes.shtml"><img src="/pokemonmasters/events/winterwishes.jpg" alt="Pokémon Masters - Winter Wishes " width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>The Winter Wishes event has begun in Pokémon Masters EX. This event is the annual holiday event and features Leon & Nessa helping deliver presents throughout Pasio while Sonia makes her first appearance in the Pasio region. Alongside this, a special Seasonal Scout is live introducing the Sync Pairs of <a href="/pokemonmasters/syncpairs/leon.shtml">Leon & Calyrex</a>. It runs until January 1st.<br />
+We're currently compiling all details in our <a href="/pokemonmasters/events/winterwishes.shtml">Winter Wishes </a> event section</p></div>
+
+<div class="pics"><a href="/anime/epiguide/evolutions"><img src="/evolutions.jpg" alt="Pokémon Evolutions" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Anime Department</h3>
+<p class="title">Pokémon Evolutions</p>
+<p>The sixth episode of the Pokémon Evolutions web anime series is now live on YouTube and Pokémon TV. This series is a web based show separate from the main anime which focuses on several key aspects across the world of Pokémon. This episode is "The Show" and is based around the Kimono Girls in Ecruteak City. The episode can be found below. We're currently updating all our databases with the content of this episode. <br />
+Episode 8, "The Discovery", will release on December 23rd<br />
+Edit @ 14:27: We have updated the <a href="/anime/epiguide/evolutions/007.shtml">Episode Page</a> with full details on this episode<br />
+Edit @ 15:00: The English version has now been released 
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/hwq6shJVpDE" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+</p></div>
+
+
+
+<div class="pics"><a href="/pokemongo/events/holidayevent2021:part1.shtml"><img src="/pokemongo/holiday2021.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Holiday Event Part 1 is now rolling out in Asia Pacific Regions This event runs from 10:00 local time until 10:00 local time on December 23rd and features the addition of costume Glaceon & Spheal as well as various spawns around the holiday.<br />
+In addition to that, new <a href="/pokemongo/raidbattles.shtml">Raid Bosses</a> are running, alongside Kyurem which can now be shiny<br />
+We have added all details of the event in our <a href="/pokemongo/events/holidayevent2021:part1.shtml">Holiday Event 2021 section</a></p></div>
+
+<div class="pics"><a href="/cafemix"><img src="/cafemix/holidaytorterra.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>A new bundle has been announced for Pokémon Café ReMix. This will go live tomorrow alongside the Alolan Vulpix Points Event and features Holiday Outfit Torterra<br />
+
+</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/15-December-2021.shtml" id="15-December-2021">Wednesday: Pokémon Legends Arceus - News + Pokémon GO - Holiday Event + Pokémon UNITE - Holiday Event + Pokémon Café Mix + Pokémon Anime - Arceus Episode</a></h2><p class="info"><span class="date">15-12-2021 00:00 GMT / 19:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  20:00 GMT<br />Edit @ 06:00: Pokémon Café Mix | Edit @ 06:01: Arceus Episode | edit @ 14:00: Pokémon Legends Arceus | Edit @ 20:00: Pokémon GO Holiday Event</p>
+
+<div class="pics"><a href="/legendsarceus"><img src="/legendsarceus/title.jpg" alt="Pokémon Legends: Arceus" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Legends: Arceus</p>
+<p>The latest news for Pokémon Legends: Arceus has been released. We're currently compiling all details so keep checking back<br />
+ If you have Pokémon Brilliant Diamond & Shining Pearl save data, you will get access to a special mission to get Darkrai and Team Galactic outfits in Pokémon Legends Arceus<br />
+There are a Diamond Clan and a Pearl Clan. Arezu is from the Diamond Clan and Lian is in the Pearl Clan. These clans pay respects to the Pokémon they call lords and ladies such as Noble Pokémon<br />
+Adaman is a member of the Diamond Clan and is partnered with Leafeon<br />
+Irida is a member of the Pearl Clan and is partnered with Glaceon<br />
+Edit @ 14:10: Added multiple <a href="/legendsarceus/pics.shtml">Pre-Release Screenshots</a><br />
+Edit @ 14:17: Updated the <a href="/legendsarceus/othergames.shtml">Other Game Connectivity</a> page with Darkrai<br />
+Edit @ 14:32: Created preliminary pages on the <a href="/legendsarceus/diamondclan.shtml">Diamond Clan</a> and the <a href="/legendsarceus/pearlclan.shtml">Pearl Clan</a><br />
+Edit @ 14:55: Created preliminary pages on the <a href="/legendsarceus/ginkgoguild.shtml">Ginkgo Guild</a><br />
+Edit @ 15:00: Updated the <a href="/legendsarceus/newitems.shtml">New Items Page</a>
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/1lAN9yMnfrQ" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+</p></div>
+
+
+<div class="pics"><a href="/pokemonunite/events/holidayfestivities.shtml"><img src="/pokemonunite/holidayevent.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>The Pokémon UNITE Holiday Festivities event is now live. This event runs from now until January 16th 2022 and features a variety of changes, in addition to the Remoat Island Snow & Ice stage that has been running a week<br />
+First, the Snowball Battle in Shivre City stage has begun. This battle features a lot of wild Delibird which, when defeated, drop a gift that include 1 of 9 different items exclusive to the stage that can be used once. If you are defeated in this mode, you will turn into a Snowman temporarily for a short time and then resume battle where you left off<br />
+Some new <a href="/pokemonunite/holowear.shtml">Holowear</a> is now available. These include the <a href="/pokemonunite/premiumholowear.shtml">Premium Holowear</a> Holiday Style for Pikachu and the Cake Style for Crustle, which are both on sale for reduced price of 1749 Gems and 1539 Gems respectively for the next week. In addition to that, the Cook Style for both Mr. Mime and Cramorant are now available for 400 Gems<br />
+The Illumination Challenge has also now begun where you can earn lights to exchange for some Holiday Outfits<br />
+Some Holiday outfits are also available in the in-game style shop<br />
+We are currently compiling full details in our <a href="/pokemonunite/events/holidayfestivities.shtml">Holiday Festivities Event Section</a>
+
+</p></div>
+
+
+<div class="pics"><a href="/pokemongo/events/holidayevent2021:part1.shtml"><img src="/pokemongo/holiday2021.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>The Pokémon GO Holiday Event Part 1 is now rolling out in Asia Pacific Regions This event runs from 10:00 local time until 10:00 local time on December 23rd and features the addition of costume Glaceon & Spheal as well as various spawns around the holiday.<br />
+In addition to that, new <a href="/pokemongo/raidbattles.shtml">Raid Bosses</a> are running, alongside Kyurem which can now be shiny<br />
+We have added all details of the event in our <a href="/pokemongo/events/holidayevent2021:part1.shtml">Holiday Event 2021 section</a></p></div>
+
+
+<div class="pics"><a href="/anime/epiguide/pokemon"><img src="/arceusepisode.jpg" width="300" alt="Pokémon 2019" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title">Pokémon Journeys - News</p>
+<p>A special episode of the anime will exclusively air on Amazon Prime in Japan on January 21st and 28th. It's called "Arceus, the One Called a God" with Parts 1 & 2 airing on the 21st and 3 & 4 on the 28th. This episode features Ash, Goh and Dawn as well as Arceus and coincides with the release of Pokémon Legends Arceus
+<table align="center" class="dextab">
+<tr > 
+<td class="fooevo">Pokémon </td>
+<td class="fooevo">Pokémon </td>
+<td class="fooevo">Pokémon </td>
+</tr>
+<tr>
+<td class="cen"><a href="/arceusepisode2.jpg" rel="lightbox[ranger3]"><img src="/arceusepisode2th.jpg" width="200" loading="lazy" /></a></td>
+<td class="cen"><a href="/arceusepisode3.jpg" rel="lightbox[ranger3]"><img src="/arceusepisode3th.jpg" width="200" loading="lazy" /></a></td>
+<td class="cen"><a href="/arceusepisode4.jpg" rel="lightbox[ranger3]"><img src="/arceusepisode4th.jpg" width="200" loading="lazy" /></a></td></tr>
+</table>
+</p></div>
+
+<div class="pics"><a href="/cafemix"><img src="/cafemix/neworders.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>New orders have been added to Pokémon Café ReMix. This adds stages 475-500 to the game. We're currently cataloguing all these new stages and details so be sure to keep checking back. A new update has also gone live which adds a Happy Bonus that you will get randomly before a match. This doubles all experience and rewards for completion<br />
+
+Edit @ 07:16: We have updated the <a href="/cafemix/mainorders.shtml">Main Orders</a> and <a href="/cafemix/menu.shtml">Menu Section</a> with the contents of today's update. The next batch of Orders will be released on December 22nd  2021<br />
+
+</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/14-December-2021.shtml" id="14-December-2021">Tuesday: Pokémon Legends Arceus - New Short + Pokémon Masters EX - Winter Wishes Event</a></h2><p class="info"><span class="date">14-12-2021 03:00 GMT / 22:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  20:09 GMT<br />Edit @ 06:00: Pokémon Masters Story Addition | Edit @ 14:00: Hisuian Voltorb | Edit @ 20:09: Episode Titles</p>
+
+<div class="pics"><a href="/legendsarceus"><img src="/legendsarceus/title.jpg" alt="Pokémon Legends: Arceus" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon Legends: Arceus</p>
+<p>Following the reveal of <a href="/legendsarceus/hisuianforms.shtml">Hisuian Voltorb</a> last week, part two of the Stop Motion animation featuring it has been released by The Pokémon Company. <table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/zv2OFR-nydM" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+</p></div>
+
+<div class="pics"><a href="/pokemonmasters/events.shtml"><img src="/pokemonmasters/events/winterwishes.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>The next event has been announced. This event is a new Story Event and the annual winter event; Winter Wishes. It adds 2 new Seasonal Sync Pairs into the game, <a href="/pokemonmasters/syncpairs/leon.shtml">Leon & Ice Rider Calyrex</a> and <a href="/pokemonmasters/syncpairs/nessa.shtml">Nessa & Eiscue</a>. It runs from Thursday December 16th  2021
+<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/P8KEgf6adXo" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+<div class="pics"><a href="/pokemonmasters/mainstory.shtml"><img src="/pokemonmasters/events/thedragonthatrulesthesky.jpg" alt="Pokémon Masters EX" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters EX</p>
+<p>The next Story element for Pokémon Masters EX has gone live. This is the third part of the Legendary Adventures, a new element which brings old Legendary Events back as part of the main story. Today the story <a href="/pokemonmasters/legendaryadventures/thedragonthatrulesthesky.shtml">The Dragon That Rules The Sky</a> is added, which allows all players to get the sync pair of <a href="/pokemonmasters/syncpairs/zinnia.shtml">Zinnia & Rayquaza</a></p></div>
+
+<div class="pics"><a href="/anime/epiguide/pokemon"><img src="/anime2019.jpg" width="300" alt="Pokémon 2019" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Anime Department</h3>
+<p class="title">Pokémon Journeys - News</p>
+<p>A new pair of Episode Titles have been released by a Japanese magazine. These episodes are due to air on January 14th, 21st and 22nd respectively. No further details have been given. <br />
+Episode 1181: Your Name is Francois<br />
+Episode 1182: The Heracross Loss and the Kailios in Love<br />
+Episode 1183: Farewell! The Wandering Rocket Gang!</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/13-December-2021.shtml" id="13-December-2021">Monday: Pokémon Sword & Shield - Online Competition + Pokémon Café ReMix - Team Event Adjustments</a></h2><p class="info"><span class="date">13-12-2021 08:34 GMT / 03:34 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  21:00 GMT<br />Edit @ 13:03: Pokémon UNITE | Edit @ 21:00: Pokémon GO Battle League</p>
+
+<div class="pics"><a href="/swordshield/onlinecompetitions.shtml"><img src="/swordshield/gift.jpg" width="300" alt="Pokémon Sword & Shield - Gift" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Sword & Shield</p>
+<p>The Rankings are now live in Pokémon Sword & Shield for the recent Tiny Tourney Online Competition. To check the results you need to go to VS and then into the Battle Stadium feature and check previous competitions. With this, once you have checked your results, you can now receive the 50 BP gift if you go to Mystery Gift and select Get Battle Stadium Rewards</p></div>
+
+<div class="pics"><a href="/pokemonunite/events.shtml"><img src="/pokemonunite/holidayevent.jpg" alt="Pokémon Sword & Shield" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon UNITE</p>
+<p>It has been confirmed that Dragonite is to release in Pokémon UNITE on December 20th at 00:00 UTC. It will drop as part of the Holiday Festivities event that starts on Wednesday this week and bea vailable for purchase within the in-game shop<table align="center" class="dextab">
+<tr > <td class="fooevo" colspan="2">Footage</td></tr>
+<tr><td class="cen" colspan="2"><iframe width="590" height="344" loading="lazy" src="https://www.youtube.com/embed/C6XwlqlQqqQ" frameborder="0" allowfullscreen></iframe></td></tr>
+</table></p></div>
+
+<div class="pics"><a href="/pokemongo/battleleague/season9.shtml"><img src="/pokemongo/battleleague/season5.jpg" width="300"  alt="Pokémon GO" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Games Department</h3>
+<p class="title">Pokémon GO</p>
+<p>Pokémon GO Battle League has now shifted to the Ulra League and Ultra League Remix. This will run until December 23rd 2021 at 21:00 UTC.</p></div>
+
+<div class="pics"><a href="/cafemix"><img src="/cafemix/titleremix.jpg" alt="Pokémon Café ReMix" width="300" loading="lazy" /></a></div>
+<div class="subcat"><h3>In The Pokémon Department</h3>
+<p class="title">Pokémon Café ReMix</p>
+<p>An update has come about Pokémon Café ReMix's Team Events. Due to feedback from Team Events, there will be some changes to them starting from December 20th and the first Team Event that starts December 27th. First, players who have not logged in since the Pokémon Café ReMix update will automatically be removed from teams. In addition to that, teams will now have the ability to auto-remove players who have been idle for a certain length of time.  The point thresholds for Team Events will also be adjusted
+</p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/12-December-2021.shtml" id="12-December-2021">Sunday: Pokémon of the Week</a></h2><p class="info"><span class="date">12-12-2021 13:00 GMT / 08:00 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  13:00 GMT</p>
+
+<div class="pics"><a href="/potw-swsh/873.shtml"><img src="/potw-swsh/873-i.jpg" alt="Pokémon of the Week - Frosmoth" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Pokémon of the Week Department</h3>
+<p class="title">Who's That Pokémon</p>
+<p>Today marks the one-hundred & eighth entry into the Generation VIII competitive field with a Galar Pokémon. These entries are created by the visitors for the visitors and then compiled by our writers Psynergy, Jellal, Mestorn, Aminith & Mcdanger. To get involved, <a href="https://forums.serebii.net/forums/potw-collaboration.210/" target="blank"><u><b>Click here for the discussion forum</b></u></a> <br />Today, we are covering a Pokémon introduced in the eighth generation.	Icy scales fall from its wings like snow as it flies over fields and mountains. The temperature of its wings is less than -290 degrees Fahrenheit. It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away. So, here it is, the one-hundred & eight entry, Frosmoth</p></div>
+
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+<div class="post">
+<h2><a href="/news/2021/11-December-2021.shtml" id="11-December-2021">Saturday: Pokémon Brilliant Diamond & Shining Pearl - Statue Distribution + Pokémon Masters EX - Triple Scout</a></h2><p class="info"><span class="date">11-12-2021 06:37 GMT / 01:37 EST</span> by <span class="user"><a href=mailto:webmaster@serebii.net>Serebii</a></span></p>
+<p><b>Be sure to check yesterday's update for the reveal of Hisuian Voltorb. </b>This update will be amended throughout the day so be sure to check back. If you have any ideas for the site, be sure to send them in<br />
+<b>Last Update:</b>  09:02 GMT<br />Edit @ 09:02: Pokémon BDSP Distribution</p>
+
+
+<div class="pics"><a href="/brilliantdiamondshiningpearl/serialcode.shtml"><img src="/brilliantdiamondshiningpearl/statueevent.jpg" border="0" alt="Pokémon: Sword & Shield Coverage 1" width="300" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Brilliant Diamond & Shining Pearl - Statue Distribution</p>
+<p>A new Mystery Gift distribution has been announced. During a special Pokémon Christmas stream on December 18th, a code will be given to get 5 Color Statues. These statues are based on the favourite Pokémon of the hosts of the stream; Pachirisu, Lucario, Rhyperior, Electivire and Glaceon. We'll provide full details of the distribution as it comes so be sure to keep checking back</p></div>
+
+
+
+<div class="pics"><a href="/pokemonmasters/syncpairscout.shtml"><img src="/pokemonmasters/elesatriple.jpg" alt="Pokémon Masters - Champion Time" width="300" loading="lazy" /></a></div>
+<div class="subcat" ><h3>In The Games Department</h3>
+<p class="title">Pokémon Masters</p>
+<p>A new Triple Feature Spotlight Scout is now live in Pokémon Masters EX. This scout provides a boosted chance of getting <a href="/pokemonmasters/syncpairs/elesa.shtml">Elesa &  Zebstrika</a>, <a href="/pokemonmasters/syncpairs/elesa.shtml">Elesa (Sygna Suit) &  Rotom</a> &  <a href="/pokemonmasters/syncpairs/lisia.shtml">Lisia & Altaria</a>. It runs until December 23rd.<br /></p></div>
+
+</div>
+<!-- end_news --><div align="left">
+<p>Until Next Time, See Ya</p>
+<p></p>
+<div align="center"><img src="/anime/pokemon/251.gif" width="131" height="165" border="0" /></div>
+<p></p>
+</div>
+
+
+		<div style="text-align:right;margin:1em;"><a href="/archive.shtml">Archived News</a></div>
+
+</main></div><!-- END #content -->
+
+
+<aside id="rbar">
+
+	<a href="/potw-swsh/" class="navheader">Pokémon of the Week</a>
+	<div align="center">
+		<a href="/potw-swsh/866.shtml"><img src="/potw-swsh/866.jpg" alt="Pokémon of the Week"  class="tbarpic"></a>
+	</div>
+
+	<div class="navheader">Next In Japan</div>
+	<div>
+		<div align="center"><img src="/anime/NextOn/1182.jpg"  class="tbarpic"></div>
+		Episode 1182<br/>
+		<b> 	Your Name is Francois</b><br/>
+		<div align="center"><img src="/anime/NextOn/1182-i.jpg"  class="tbarpic"></div>
+		Airdate: 14/01/2022<br/>
+	</div>
+
+	<div class="navheader">Recently In USA</div>
+	<div>
+		<div align="center"><a href="/anime/epiguide/pokemon/1149.shtml"><img src="/1149.jpg"  class="tbarpic"></div>
+		Episode 1149<br/>
+		<b>Beyond Chivalry... Aiming to be a Leek Master!</b><br />
+		<img src="/anime/synopsis.gif">Synopsis</a><br/>
+		<a href="/anime/pictures/pokemon/1149.shtml"><img src="/anime/pictures.gif">Pictures</a><br/>
+	</div>
+
+	<div class="navheader">Next In USA</div>
+	<div>
+		<div align="center"><a href="/anime/epiguide/pokemon/1150.shtml"><img src="/1150.jpg"  class="tbarpic"></div>
+		Episode 1150<br/>
+		<b>Searching for Service With a Smile!</b><br />
+		Airdate: 01/2022</a><br />
+		<a href="/anime/epiguide/pokemon/1150.shtml"><img src="/anime/synopsis.gif">Synopsis</a><br/>
+		<a href="/anime/pictures/pokemon/1150.shtml"><img src="/anime/pictures.gif">Pictures</a><br/>
+	</div>
+
+	<div class="navheader">Social Media</div>
+	<div class="center">
+		<a href="http://www.facebook.com/SerebiiNetPage" target="blank"><img src="/Toolbar/headers/Facebook.png" width="30" alt="Facebook"/></a>
+		<a href="http://www.twitter.com/SerebiiNet" target="blank"><img src="/Toolbar/headers/Twitter.png" width="30" alt="Twitter"/></a>
+		<a href="http://www.youtube.com/serebiispp" target="blank"><img src="/Toolbar/headers/youtube.png" width="30" alt="YouTube"/></a>
+		<a href="http://www.instagram.com/serebii" target="blank" rel="nofollow"><img src="/Toolbar/headers/instagram.png" width="30" alt="Instagram"/></a>
+	</div>
+
+	<div class="navheader">In Association With</div>
+	<div class="center">
+		<a href="http://www.pocketmonsters.net/" target="blank" rel="nofollow"><img src="/Toolbar/pm.png" alt="#PM"></a><br/>
+		<a href="http://www.legendarypokemon.net/" target="blank" rel="nofollow"><img src="/Toolbar/lpoke.png" alt="Legendary Pokémon"></a>
+	</div>
+
+</aside>
+
+</div><!-- END #wrapper -->
+<footer id="footer">
+	<div class="copyright">
+		<a href="#top" alt="Top of Page" title="Top of Page" class="totop"></a>
+
+		All Content is &copy; Copyright of Serebii.net 1999-2021. |
+		<a href="/privacy.shtml">Privacy Policy</a> |
+		<a class="nn-cmp-show" href="#">Manage Cookie Settings</a><br/>
+		Pokémon and All Respective Names are Trademark &amp; &copy; of Nintendo 1996-2021
+	</div>
+
+	<div style="height:102px">
+		<div id="nn_lb2"></div><div id="nn_mobile_lb2"></div>
+<div id="celtra-reveal-wrapper" style="position:fixed; height: auto; width: 100%">
+<div id="nn_1by1"></div>
+</div>
+	</div>
+</footer>
+
+
+
+</body></html>
