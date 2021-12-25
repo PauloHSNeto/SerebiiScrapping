@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 #
-# with open("serebii.html",'r',) as serebii_file:
+# with open("serebii.html",'r',) as serebii_file: #analisando pagina inicial pelo arquivo serebii.html
 #     content = serebii_file.read()
 #     #print(content)
 #     soup = BeautifulSoup(content,'lxml')
