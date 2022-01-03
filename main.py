@@ -17,4 +17,5 @@ infos = soup.find_all(class_="fooinfo")
 textos_li= soup.find_all("li")
 
 for i in infos:
-    print(i.text.replace("\n",""))  #mostra todos os pokemon de fogo da gen 1 com os stats sem os \n
+    
+        print(i.text.replace("\n"," "))  #mostra todos os pokemon de fogo da gen 1 com os stats sem os \n
